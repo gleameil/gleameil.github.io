@@ -7,7 +7,6 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=IM+Fell+English&display=swap" rel="stylesheet">
         <title>✨of evernost ~ gleameil✨</title>
-        <link rel="stylesheet" href="styles.css" type="text/css">
         <script src="index.js"></script>
     </head>
     <body>
@@ -51,7 +50,7 @@
         </ul>
         <h2>Gleameil is <button id="new-gleameil-art" onclick="gleameil++; if (gleameil > 17) {gleameil = 0}; document.getElementById('gleameil').src = `assets/images/g${gleameil}.jpg`">Click!</button></h2>
         <p>A personification of my aesthetic, a fairy, and the name of a minor character in David Lindsay's <i>A Voyage to Arcturus</i>. The relevant qualities of Lindsay's character are that she has a wild harp for a heart, and she dies looking for beauty in things too terrible or good to be beautiful. Pictures on the left by Stable Diffusion (PixArt Sigma XL 1k, the model at the top of the list!) via Draw Things. Drawing on the right is mine, and was one of the bases for SD's.</p>
-        <div style="display:flex;justify-content:space-around">
+        <div style="display:flex;flex-wrap: wrap;justify-content:space-around">
             <img id="gleameil" src="assets/images/g0.jpg" width="500" height="500">
             <img alt="The bad photo of a drawing we used for this" src="assets/images/originalg.jpg" width="500" height="500">
         </div>
