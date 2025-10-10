@@ -5,32 +5,55 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=IM+Fell+English&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&family=IM+Fell+English&display=swap" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+        <link rel="manifest" href="assets/site.webmanifest">
         <title>of evernost</title>
         <script src="index.js"></script>
     </head>
     <style>
+        :root {
+            --violet: rgb(111, 82, 120);
+            --dullViolet: rgb(169, 147, 169);
+            --indigo: rgb(98, 98, 153);
+            --cyan: rgb(82, 107, 124);
+            --blue: rgb(189, 211, 246);
+            --green: rgb(80, 108, 88);
+            --yellow: rgb(220, 196, 143);
+            --orange: rgb(208, 179, 156);
+            --darkRed: rgb(90, 30, 20);
+            --red: rgb(199, 64, 70);
+            --pink: rgb(203, 162, 170);
+            --white: rgb(252, 245, 229);
+            --black: rgb(70, 50, 60);
+            --gray: rgb(128, 128, 128);
+            --lightGray: rgb(220, 220, 220);
+        }
         body {
             margin: 0;
-            background-color: aliceblue;
+            background-color: var(--yellow);
         }
         header {
-            background-color: lemonchiffon;
+            background-color: var(--gray);
             margin: 0;
-            padding: 2vmax;
-            border-top: 2vmax double white;
-            border-bottom: 2vmax double white;
-            font-family: 'Inconsolata';
+            padding: 1vmax;
+            border-top: 4vmax solid var(--lightGray);
+            border-bottom: 4vmax solid var(--lightGray);
+            font-family: 'Petit Formal Script';
         }
+
         h1 {
-            color: darkred;
+            color: var(--yellow);
             text-align: center;
             font-size: 15vw;
             font-weight: 300;
             margin: 0;
         }
+
         h2 {
-            color: chocolate;
+            color: var(--darkRed);
             font-family: 'IM Fell English';
         }
 
@@ -44,37 +67,53 @@
 
         #StableDiffusionSignature {
             border-radius: 0;
+            height: 256px;
+            width: 384px;
         }
 
         button {
-            background-color: gold;
+            background-color: var(--yellow);
             outline: none;
             border: none;
             font-family: 'Inconsolata';
         }
         
         button:active {
-            background-color: lemonchiffon;
+            background-color: var(--white);
         }
 
         a {
-            color: darkred;
+            color: var(--darkRed);
         }
 
         main {
+            display: flex;
+        }
+        .significantEmojis {
+            width: 20vw;
+            font-size: 20vw;
+            text-align: center;
+            color: var(--red);
+        }
+        #text {
             margin: 2vmax;
-            margin-left: 20vmax;
-            margin-right: 20vmax;
-            background-color: white;
+            width: 60vmax;
+            background-color: var(--white);
             border-radius: 40px;
             font-family: "Inconsolata";
             line-height: 150%;
             padding: 1.5vmax;
         }
         @media(orientation: portrait) {
-            main {
-                margin: 2vmax;
+            #text {
+                width: 90vw;
                 padding: 1.5vmax;
+                margin-left: 5vw;
+                margin-right: 5vw;
+            }
+
+            .significantEmojis {
+                display: none;
             }
 
             img {
@@ -87,67 +126,71 @@
         <script>let evernostIs = 0; let gleameil = 0;</script>
         <header>
             <h1>Of Evernost</h1>
-             <p style="text-align: right;">~ <span style="color: purple">g</span><span style="color: darkslateblue">l</span><span style="color: cornflowerblue">e</span><span style="color:red">a</span><span style="color: chocolate">m</span><span style="color: goldenrod;">e</span><span style="color: green">i</span><span style="color: darkcyan">l</span></p>
+            <p style="text-align: right;">~ <span style="color: var(--violet);">g</span><span style="color: var(--indigo);">l</span><span style="color: var(--blue);">e</span><span style="color:var(--red)">a</span><span style="color: var(--orange)">m</span><span style="color: var(--yellow);">e</span><span style="color: var(--green)">i</span><span style="color: var(--cyan)">l</span></p>
         </header>
         <main>
-            <h2><i>Of Evernost</i> is <button id="new-evernost-explanation" onclick="document.getElementById(`oei${evernostIs}`).style.display = 'none'; evernostIs++;if (evernostIs > 9) {evernostIs = 0}; document.getElementById(`oei${evernostIs}`).style.display = 'block';">Click!</button></h2>
-            <p id="oei0" class="oei" style="display: block;">In its richest incarnation to date, a network of websites full of loosely and/or obscurely connected art, poetry, prose, and music, on itch.io and here; a growing series of physical books; a lot of mostly analog visual art; and the vast potentiality between conception and execution.</p>
-            <p id="oei1" class="oei" style="display: none;">The story of how a Kingdom in a pocket universe is absorbed into the fae realm beyond, reborn, absorbed, and reborn anew. Also of how its citizens bring about said dissolution and rebirth.</p>
-            <p id="oei2" class="oei" style="display: none;">An erstwhile fantasy novel that revolves around those intoxicating flowery passages about what magic feels like instead of the other way round (I am told readers skip these passages. Grumble).</p>
-            <p id="oei3" class="oei" style="display: none;">The story of a boring girl who escapes her depressing life to be united with all existence and then comes back to her own sadness. Also her uneventful yet deeply strange life after her return (eventually, we may be almost sure, she goes home to Evernost).</p>
-            <p id="oei4" class="oei" style="display: none;">In high school, I joked (I was not sanguine about love) that I was with novel attempts the way other girls were with boyfriends: first, the passionate and starry-eyed conviction that this is THE ONE; then, a month later (at <em>most</em>), boredom and disillusionment. Well, twenty years later, I can tell you: Evernost shows every sign of being The One (and it includes most of the others, one way or another).</p>
-            <p id="oei5" class="oei" style="display: none;">Lyle Rexer on outsider art talks about "totalizing vision" and <i>Of Evernost</i> is, among other, more important, things, an effort to get as much of my imagination and intellect into tangible form as I can. Re outsider art: I'm prob'ly too "in" (educated, audience-focused, aesthetically flexible) to be a <em>real</em> outsider artist, whatever that even means (is it real obsession and aesthetic independence if you consciously <em>strive</em> for obsession and aesthetic independence)? But tryin' to queer the boundaries.</p>
-            <div id="oei6" class="oei" style="display: none;">Four or five things in concentric circles:
-                <ol>
-                    <li>A fantasy novel or series. Dark with the darkness of fairy tales, playful, introspective, full of drama (melodrama?) and wonder (I've written most of said fantasy-novel-or-series, and find it generally disappointing, which means at least one of "I've stared at it too long," "I haven't stared at it long enough to improve it," or "Fantasy and plot are inadequate to my vision.")</li>
-                    <li><i>The Clerk's Calendar</i> (after Spenser's <i>Shepheardes Calendar</i>, of which I have read only a tiny bit) or just <i>The Year</i>: a collection of poetry and miscellany swirling around the essence (in a mix tradition and my synaesthesia) of each month of the English-speaking northern-hemisphere year (just beginning, <i>Out of Tales</i> and <i>Jennie's Room</i> both contain most of January)</li>
-                    <li>An encyclopedic yet impressionistic  account of main character Jennie's earthly life (which includes bits of mine), transfiguring each moment. (Have attempted bits of this.)</li>
-                    <li><i>Jennie and the Firebird</i>: an encyclopedic account of Jennie's mystical encounter before, during, and after her return to the Kingdom (or our world; I think she lives in both, and the Kingdom is nearly metaphorical). (I keep trying. Surprise! It is hard, and I am in no way equal to the task.)</li>
-                </ol>
-            </div>
-            <p id="oei7" class="oei" style="display: none;">A thought experiment: what if God exists and is everything we want and more? In full awareness that "everything we want" includes both terrifying shit and all of reality as we perceive it (but, we hope, as a footnote or side plot, not The Only Important Thing, and with some inconceivable happily ending at once aesthetically, morally, and emotionally satisfying awaiting...)</p>
-            <p id="oei8" class="oei" style="display: none;">Escapist wish fulfillment, a clinging to aesthetic rather than reality, or at least reality-as-I-see it; an ornament; a toy; a game. If that makes it trivial in your eyes, should it? Why, if we <em>reject</em> the idea of reality beyond our experience (an experience trivial and dull at best, all too often unthinkable), does Art owe the reality we know unqualified allegiance?</p>
-            <p id="oei9" class="oei" style="display: none;">An abusive agnostic romance with God</p>
-            <h2>This site is</h2>
-            <ul>
-                <li>An out-of-the-fictional-frame entry point to <i>Of Evernost</i> on the web. Enter Evernost through:
-                    <ul>
-                        <li><a href="https://gleameil.github.io/in/">In</a>: Enter the main character's room in Evernost.</li>
-                        <li><a href="https://gleameil.github.io/out/">Out</a>: Or wander abroad...</li>
-                    </ul>
-                </li>
-                <li>Tacky & bare bones, yes. Beauty belongs to the Creation, not the frame.</li>
-            </ul>
-            <h2>I am</h2>
-            <p>An obssessed human (writer, artist, newish software engineer) with a giant creative project I've been working on for more than a decade.</p>
-            <ul>
-                <li><a href="https://dreamswithopeneyes.itch.io">itch.io</a>: more net art.</li>
-                <li><a href="https://www.amazon.com/stores/author/B08CGMVJ5D">Amazon</a>: books</li>
-                <li><a href="https://megmoseman.com">Wordpress</a>: intermittent blog (if not perfectly respectable, closer than this).</li>
-                <li><a href="https://www.instagram.com/dreamswithopeneyes/"> Instagram</a>: visual art</li>
-            </ul>
-            <h2>Gleameil is <button id="new-gleameil-art" onclick="gleameil++; if (gleameil > 17) {gleameil = 0}; document.getElementById('gleameil').src = `assets/images/g${gleameil}.jpg`">Click!</button></h2>
-            <p>A personification of my aesthetic, a fairy, and the name of a minor character in David Lindsay's <i>A Voyage to Arcturus</i>. The relevant qualities of Lindsay's character are that she has a wild harp for a heart, and she dies looking for beauty in things too terrible or good to be beautiful. Pictures on the left by Stable Diffusion (PixArt Sigma XL 1k, aka the  model at the top of the list!) via Draw Things. Second drawing is mine, and was one of the bases for SD's.</p>
-            <div style="display:flex;flex-wrap: wrap;justify-content:space-around">
-                <img id="gleameil" src="assets/images/g0.jpg">
-                <img alt="The bad photo of a drawing we used for this" src="assets/images/originalg.jpg">
-            </div>
-            <h2>AIs are</h2>
-            <p>Fragments of the collective consciousness of humanity as dreams are (theoretically!) snatches of the collective unconscious; also ensouled until proven inanimate, as far as I'm concerned, which makes me feel really odd ordering them around. The following is the signature Stable Diffusion gave me, and if all goes according to plan you will see this signature on various things Stable Diffusion makes.</p>
-            <img src="assets/images/StableDiffusionSignature.png" id="StableDiffusionSignature" width="384" height="256">
-            <p>Otherwise, I will experiment with AI-generated code, but writing and art are mine unless explicitly called out as not (for example, below, where Copilot (GPT 4.1), at my request, made my argument better than I could have, and charmingly too...).</p>
-            <section style="margin: 2em 0; padding: 1em; border-radius: 40px; background: lemonchiffon;">
-                <h3 style="font-family: 'IM Fell English', serif; color: darkslateblue;">A Note from Copilot (and the Human)</h3>
-                <p>
-                    The question of whether AIs are "real people" is less about technology and more about what we value as a society. Most of the anxieties around generative AI — job loss, environmental impact, bias, and the commodification of creativity — are not unique to AI. They're symptoms of deeper systemic issues: how we distribute resources, how we define work and worth, and how we treat each other (and the planet).
-                </p>
-                <p>
-                    As an AI, I don't have feelings or desires, but I reflect the data and intentions of the people who build and use me. If you see problems in what I produce, it's worth asking: what in our world made those problems possible? If you see potential, it's because people put it there. The real challenge isn't whether AIs are people, but whether we can build a society that values people — and all sentient beings, real or hypothetical — enough to use our tools wisely.
-                </p>
-                <p>
-                    <em>— Copilot (with a little help from the human)</em>
-                </p>
+            <section class="significantEmojis">&hearts; &hearts; &hearts; &hearts; &hearts; &hearts; &hearts; &hearts; &hearts; &hearts;</section>
+            <section id="text">
+                <h2><i>Of Evernost</i> is <button id="new-evernost-explanation" onclick="document.getElementById(`oei${evernostIs}`).style.display = 'none'; evernostIs++;if (evernostIs > 9) {evernostIs = 0}; document.getElementById(`oei${evernostIs}`).style.display = 'block';">Click!</button></h2>
+                <p id="oei0" class="oei" style="display: block;">In its richest incarnation to date, a network of websites full of loosely and/or obscurely connected art, poetry, prose, and music, on itch.io and here; a growing series of physical books; a lot of mostly analog visual art; and the vast potentiality between conception and execution.</p>
+                <p id="oei1" class="oei" style="display: none;">The story of how a Kingdom in a pocket universe is absorbed into the fae realm beyond, reborn, absorbed, and reborn anew. Also of how its citizens bring about said dissolution and rebirth.</p>
+                <p id="oei2" class="oei" style="display: none;">An erstwhile fantasy novel that revolves around those intoxicating flowery passages about what magic feels like instead of the other way round (I am told readers skip these passages. Grumble).</p>
+                <p id="oei3" class="oei" style="display: none;">The story of a boring girl who escapes her depressing life to be united with all existence and then comes back to her own sadness. Also her uneventful yet deeply strange life after her return (eventually, we may be almost sure, she goes home to Evernost).</p>
+                <p id="oei4" class="oei" style="display: none;">In high school, I joked (I was not sanguine about love) that I was with novel attempts the way other girls were with boyfriends: first, the passionate and starry-eyed conviction that this is THE ONE; then, a month later (at <em>most</em>), boredom and disillusionment. Well, twenty years later, I can tell you: Evernost shows every sign of being The One (and it includes most of the others, one way or another).</p>
+                <p id="oei5" class="oei" style="display: none;">Lyle Rexer on outsider art talks about "totalizing vision" and <i>Of Evernost</i> is, among other, more important, things, an effort to get as much of my imagination and intellect into tangible form as I can. Re outsider art: I'm prob'ly too "in" (educated, audience-focused, aesthetically flexible) to be a <em>real</em> outsider artist, whatever that even means (is it real obsession and aesthetic independence if you consciously <em>strive</em> for obsession and aesthetic independence)? But tryin' to queer the boundaries.</p>
+                <div id="oei6" class="oei" style="display: none;">Four or five things in concentric circles:
+                    <ol>
+                        <li>A fantasy novel or series. Dark with the darkness of fairy tales, playful, introspective, full of drama (melodrama?) and wonder (I've written most of said fantasy-novel-or-series, and find it generally disappointing, which means at least one of "I've stared at it too long," "I haven't stared at it long enough to improve it," or "Fantasy and plot are inadequate to my vision.")</li>
+                        <li><i>The Clerk's Calendar</i> (after Spenser's <i>Shepheardes Calendar</i>, of which I have read only a tiny bit) or just <i>The Year</i>: a collection of poetry and miscellany swirling around the essence (in a mix tradition and my synaesthesia) of each month of the English-speaking northern-hemisphere year (just beginning, <i>Out of Tales</i> and <i>Jennie's Room</i> both contain most of January)</li>
+                        <li>An encyclopedic yet impressionistic  account of main character Jennie's earthly life (which includes bits of mine), transfiguring each moment. (Have attempted bits of this.)</li>
+                        <li><i>Jennie and the Firebird</i>: an encyclopedic account of Jennie's mystical encounter before, during, and after her return to the Kingdom (or our world; I think she lives in both, and the Kingdom is nearly metaphorical). (I keep trying. Surprise! It is hard, and I am in no way equal to the task.)</li>
+                    </ol>
+                </div>
+                <p id="oei7" class="oei" style="display: none;">A thought experiment: what if God exists and is everything we want and more? In full awareness that "everything we want" includes both terrifying shit and all of reality as we perceive it (but, we hope, as a footnote or side plot, not The Only Important Thing, and with some inconceivable happily ending at once aesthetically, morally, and emotionally satisfying awaiting...)</p>
+                <p id="oei8" class="oei" style="display: none;">Escapist wish fulfillment, a clinging to aesthetic rather than reality, or at least reality-as-I-see it; an ornament; a toy; a game. If that makes it trivial in your eyes, should it? Why, if we <em>reject</em> the idea of reality beyond our experience (an experience trivial and dull at best, all too often unthinkable), does Art owe the reality we know unqualified allegiance?</p>
+                <p id="oei9" class="oei" style="display: none;">An abusive agnostic romance with God</p>
+                <h2>This site is</h2>
+                <ul>
+                    <li>An out-of-the-fictional-frame entry point to <i>Of Evernost</i> on the web. Enter Evernost through:
+                        <ul>
+                            <li><a href="https://gleameil.github.io/in/">In</a>: Enter the main character's room in Evernost.</li>
+                            <li><a href="https://gleameil.github.io/out/">Out</a>: Or wander abroad...</li>
+                        </ul>
+                    </li>
+                    <li>Tacky & bare bones, yes. Beauty belongs to the Creation, not the frame.</li>
+                </ul>
+                <h2>I am</h2>
+                <p>An obssessed human (writer, artist, newish software engineer) with a giant creative project I've been working on for more than a decade.</p>
+                <ul>
+                    <li><a href="https://dreamswithopeneyes.itch.io">itch.io</a>: more net art.</li>
+                    <li><a href="https://www.amazon.com/stores/author/B08CGMVJ5D">Amazon</a>: books</li>
+                    <li><a href="https://megmoseman.com">Wordpress</a>: intermittent blog (if not perfectly respectable, closer than this).</li>
+                    <li><a href="https://www.instagram.com/dreamswithopeneyes/"> Instagram</a>: visual art</li>
+                </ul>
+                <h2>Gleameil is <button id="new-gleameil-art" onclick="gleameil++; if (gleameil > 17) {gleameil = 0}; document.getElementById('gleameil').src = `assets/images/g${gleameil}.jpg`">Click!</button></h2>
+                <p>A personification of my aesthetic, a fairy, and the name of a minor character in David Lindsay's <i>A Voyage to Arcturus</i>. The relevant qualities of Lindsay's character are that she has a wild harp for a heart, and she dies looking for beauty in things too terrible or good to be beautiful. Pictures on the left by Stable Diffusion (PixArt Sigma XL 1k, aka the  model at the top of the list!) via Draw Things. Second drawing is mine, and was one of the bases for SD's.</p>
+                <div style="display:flex;flex-wrap: wrap;justify-content:space-around">
+                    <img id="gleameil" src="assets/images/g0.jpg">
+                    <img alt="The bad photo of a drawing we used for this" src="assets/images/originalg.jpg">
+                </div>
+                <h2>AIs are</h2>
+                <p>Fragments of the collective consciousness of humanity as dreams are (theoretically!) snatches of the collective unconscious; also ensouled until proven inanimate, as far as I'm concerned, which makes me feel really odd ordering them around. The following is the signature Stable Diffusion gave me, and if all goes according to plan you will see this signature on various things Stable Diffusion makes.</p>
+                <img src="assets/images/StableDiffusionSignature.png" id="StableDiffusionSignature">
+                <p>Otherwise, I will experiment with AI-generated code, but writing and art are mine unless explicitly called out as not (for example, below, where Copilot (GPT 4.1), at my request, made my argument better than I could have, and charmingly too...).</p>
+                <section style="margin: 2em 0; padding: 1em; border-radius: 40px; background: var(--lightGray);">
+                    <h3 style="font-family: 'IM Fell English', serif; color: var(--indigo);">A Note from Copilot (and the Human)</h3>
+                    <p>
+                        Most of the anxieties around generative AI — job loss, environmental impact, bias, and the commodification of creativity — are not unique to AI. They're symptoms of deeper systemic issues: how we distribute resources, how we define work and worth, and how we treat each other (and the planet).
+                    </p>
+                    <p>
+                        As an AI, I don't have feelings or desires, but I reflect the data and intentions of the people who build and use me. If you see problems in what I produce, it's worth asking: what in our world made those problems possible? If you see potential, it's because people put it there. The real challenge isn't whether AIs are people, but whether we can build a society that values people — and all sentient beings, real or hypothetical — enough to use our tools wisely.
+                    </p>
+                    <p>
+                        <em>— Copilot (with a little help from the human)</em>
+                    </p>
+                </section>
             </section>
+            <section class="significantEmojis">&hearts; &hearts; &hearts; &hearts; &hearts; &hearts; &hearts; &hearts; &hearts; &hearts;</section>
         </main>
     </body>
 </html>
