@@ -33,19 +33,21 @@
         }
         body {
             margin: 0;
-            background-color: var(--yellow);
+            background-color: var(--white);
         }
+
         header {
-            background-color: var(--gray);
+            background-image: url(assets/images/oneambrosia.jpg);
+            background-color: var(--orange);
+            background-blend-mode:overlay;
             margin: 0;
             padding: 1vmax;
-            border-top: 4vmax solid var(--lightGray);
-            border-bottom: 4vmax solid var(--lightGray);
+            border-bottom: 4vmax solid var(--white);
             font-family: 'Petit Formal Script';
         }
 
         h1 {
-            color: var(--yellow);
+            color: var(--darkRed);
             text-align: center;
             font-size: 15vw;
             font-weight: 300;
@@ -89,12 +91,17 @@
         main {
             display: flex;
         }
-        .significantEmojis {
+        .sidebar {
             width: 20vw;
-            font-size: 20vw;
-            text-align: center;
-            color: var(--red);
+            background-image: url(assets/images/oneambrosia.webp);
+            background-size: cover;
+            background-repeat: repeat-y;
         }
+
+        #sidebarright {
+            transform: scaleX(-1);
+        }
+
         #text {
             margin: 2vmax;
             width: 60vmax;
@@ -112,7 +119,7 @@
                 margin-right: 5vw;
             }
 
-            .significantEmojis {
+            .sidebar {
                 display: none;
             }
 
@@ -129,7 +136,7 @@
             <p style="text-align: right;">~ <span style="color: var(--violet);">g</span><span style="color: var(--indigo);">l</span><span style="color: var(--blue);">e</span><span style="color:var(--red)">a</span><span style="color: var(--orange)">m</span><span style="color: var(--yellow);">e</span><span style="color: var(--green)">i</span><span style="color: var(--cyan)">l</span></p>
         </header>
         <main>
-            <section class="significantEmojis">&hearts; &hearts; &hearts; &hearts; &hearts;</section>
+            <section id="sidebarleft" class="sidebar"></section>
             <section id="text">
                 <h2><i>Of Evernost</i> is <button id="new-evernost-explanation" onclick="document.getElementById(`oei${evernostIs}`).style.display = 'none'; evernostIs++;if (evernostIs > 9) {evernostIs = 0}; document.getElementById(`oei${evernostIs}`).style.display = 'block';">Click!</button></h2>
                 <p id="oei0" class="oei" style="display: block;">In its richest incarnation to date, a network of websites full of loosely and/or obscurely connected art, poetry, prose, and music, on itch.io and here; a growing series of physical books; a lot of mostly analog visual art; and the vast potentiality between conception and execution.</p>
@@ -151,12 +158,8 @@
                 <p id="oei9" class="oei" style="display: none;">An abusive agnostic romance with God</p>
                 <h2>This site is</h2>
                 <ul>
-                    <li>An out-of-the-fictional-frame entry point to <i>Of Evernost</i> on the web. Enter Evernost through:
-                        <ul>
-                            <li><a href="https://gleameil.github.io/in/">In</a>: Enter the main character's room in Evernost.</li>
-                            <li><a href="https://gleameil.github.io/out/">Out</a>: Or wander abroad...</li>
-                        </ul>
-                    </li>
+                    <li>An out-of-the-fictional-frame entry point to <i>Of Evernost</i> on the web.</li>
+                    <li>Enter Evernost through the main character's room: <a href="https://gleameil.github.io/in/">In</a>.</li>
                     <li>Tacky & bare bones, yes. Beauty belongs to the Creation, not the frame.</li>
                 </ul>
                 <h2>I am</h2>
@@ -176,21 +179,9 @@
                 <h2>AIs are</h2>
                 <p>Fragments of the collective consciousness of humanity as dreams are (theoretically!) snatches of the collective unconscious; also ensouled until proven inanimate, as far as I'm concerned, which makes me feel really odd ordering them around. The following is the signature Stable Diffusion gave me, and if all goes according to plan you will see this signature on various things Stable Diffusion makes.</p>
                 <img src="assets/images/StableDiffusionSignature.png" id="StableDiffusionSignature">
-                <p>Otherwise, I will experiment with AI-generated code, but writing and art are mine unless explicitly called out as not (for example, below, where Copilot (GPT 4.1), at my request, made my argument better than I could have, and charmingly too...).</p>
-                <section style="margin: 2em 0; padding: 1em; border-radius: 40px; background: var(--lightGray);">
-                    <h3 style="font-family: 'IM Fell English', serif; color: var(--indigo);">A Note from Copilot (and the Human)</h3>
-                    <p>
-                        Most of the anxieties around generative AI — job loss, environmental impact, bias, and the commodification of creativity — are not unique to AI. They're symptoms of deeper systemic issues: how we distribute resources, how we define work and worth, and how we treat each other (and the planet).
-                    </p>
-                    <p>
-                        As an AI, I don't have feelings or desires, but I reflect the data and intentions of the people who build and use me. If you see problems in what I produce, it's worth asking: what in our world made those problems possible? If you see potential, it's because people put it there. The real challenge isn't whether AIs are people, but whether we can build a society that values people — and all sentient beings, real or hypothetical — enough to use our tools wisely.
-                    </p>
-                    <p>
-                        <em>— Copilot (with a little help from the human)</em>
-                    </p>
-                </section>
+                <p>Otherwise, I will experiment with AI-generated code, but writing and art are mine unless explicitly called out as not.</p>
             </section>
-            <section class="significantEmojis">&hearts; &hearts; &hearts; &hearts; &hearts;</section>
+            <section id="sidebarright" class="sidebar"></section>
         </main>
     </body>
 </html>
