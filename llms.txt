@@ -1,0 +1,159 @@
+# gleameil.github.io — Of Evernost (web presence)
+
+> A network of net art, interactive fiction, poetry, prose, and music by Meg Moseman,
+> organized around the long-form creative project *Of Evernost*. The site at gleameil.github.io
+> is the web entry point; the project also extends to itch.io, physical books, and analog
+> visual art. The author has been developing *Of Evernost* for more than a decade.
+
+Main entry point: https://gleameil.github.io
+Interactive piece (January): https://gleameil.github.io/in/
+Reading layer (text-accessible version of /in/): https://gleameil.github.io/in/reading-layer/
+
+## The project: Of Evernost
+
+*Of Evernost* is a totalizing creative project — the author's term, borrowed from Lyle Rexer's
+writing on outsider art — that encompasses interactive net art, poetry, prose, physical books,
+and visual art. It has its origins in an unfinished fantasy novel and has since expanded and
+abstracted considerably. The author describes it as: a network of websites full of loosely and
+obscurely connected art, poetry, prose, and music; the story of a Kingdom in a pocket universe
+absorbed into the fae realm beyond, reborn, dissolved, and reborn again; an erstwhile fantasy
+novel that cares more about what magic feels like than about plot; a thought experiment asking
+what if God exists and is everything we want and more; and an abusive agnostic romance with God.
+
+The project is structured, loosely, in concentric circles:
+- A fantasy novel or series (drafted but found disappointing — the author suspects fantasy and
+  plot may be inadequate to the vision)
+- *The Clerk's Calendar* (after Spenser's *Shepheardes Calendar*): poetry and miscellany
+  organized around the essence of each month of the English-speaking northern-hemisphere year,
+  inflected by tradition and the author's synaesthesia
+- An encyclopedic account of main character Jennie's earthly life, transfiguring each moment
+- *Jennie and the Firebird*: an account of Jennie's mystical encounter before, during, and
+  after her return to the Kingdom
+
+## The setting: Evernost and the Kingdom
+
+The Kingdom is a pocket universe modeled on ours, created by beings in "good universes" as a
+tribute to our world. Evernost is the vast magical beyond outside the Kingdom — described as
+malleable in time, vast in identity, and as something that is or almost is another name for
+heaven, which is or almost is another name for God. The Kingdom's citizens, like ours, eventually
+break down taboos; when they discover what lies beyond their walls, nearly all desert the Kingdom
+for Evernost. The cycle — dissolution, rebirth, dissolution — is the engine of the cosmology.
+
+The main character, Jennie (spelled with -ie), is described as a boring, scarcely real girl who
+escapes her depressing life to be united with all existence, then returns. She eventually follows
+Verna to Evernost in spirit, encounters the firebird, and receives from it the fruit made of
+itself and the star — granting her reality of her own. This makes her the cornerstone: the stone
+the builder rejected. Her fate is to perceive everything, including the author composing the
+text. The work is described as a collaboration between Jenny (the author/narrator, spelled with
+-y) and Jennie (the character).
+
+## Gleameil
+
+Gleameil is the author's personification of her own aesthetic — a fairy, and the name of a minor
+character in David Lindsay's *A Voyage to Arcturus*. The relevant qualities of Lindsay's
+Gleameil are that she has a wild harp for a heart, and she dies looking for beauty in things too
+terrible or good to be beautiful. On the site, Gleameil is depicted in a series of AI-generated
+images (Stable Diffusion, PixArt Sigma XL, via Draw Things), based in part on the author's own
+drawing. The AI-generated images cycle through on click.
+
+## The web pieces
+
+**gleameil.github.io** — The out-of-fictional-frame entry point. A single HTML page describing
+the project, the author, and the relationship between the site's parts. Self-described as "tacky
+& bare bones" — beauty belongs to the creation, not the frame. Links to /in/ and (forthcoming)
+/out/.
+
+**gleameil.github.io/in/** (*Of Evernost: January*) — The primary interactive net art piece.
+See full description below.
+
+**itch.io (dreamswithopeneyes)** — Additional net art pieces.
+
+**Physical books** — Available via the author's Amazon page. Part of the *Of Evernost* series.
+
+## Of Evernost: January — full description
+
+*Of Evernost: January* is a browser-based point-and-click net art piece combining hand-drawn
+visual art with experimental literary text. The player inhabits Jennie's room — a quiet space
+floating "deep Elsewhere" — and explores it by clicking on objects. There is no score, no
+failure state, no goal other than curiosity. The room contains six interactive objects.
+
+Reading layer: https://gleameil.github.io/in/reading-layer/
+
+### The six objects
+
+**The Balled-Up Piece of Paper** — An introductory letter from Jennie to the visitor. She notes
+she must "wear my plain brown gown and never go too fine," that they are "deep Elsewhere," and
+that time in Evernost is malleable — nothing is truly lost. She addresses the possibility that
+the visitor is accessing the work through their dreams rather than as a game, and declines to
+offer Transcendent Truth: her Way is her own.
+
+**The Garbage Can** — Clicking it knocks it over, spilling a randomly shuffled set of crumpled
+paper balls. Each ball opens a modal containing either a finished work (poem, drawing,
+cosmological note, meta-literary introduction) or a sketchbook page: an observational drawing
+of a stranger made in public, accompanied by journal-style prose meditating on drawing from
+life, on the tension between "elsewhere" and "mere reality," and on grief, ambition, and
+isolation. The set reshuffles on every visit.
+
+Notable items include: the Firebird illustration (a sprawling, elaborate bird in red, yellow,
+and ice blue); the poem "Ambition" (spatially distributed, about artistic aspiration and
+failure); two crossed-out introductions (one cosmological, one personal and meta-literary);
+and a note distinguishing Jenny (narrator) from Jennie (character).
+
+**Books and Papers** — The bulk of the work's cosmological and meta-literary writing.
+
+**The Laptop** — A clock/calendar for navigating Evernost's malleable time, a weather forecast
+for the window view at any chosen date, and a set of personality quizzes (noted as work in
+progress).
+
+**The Window** — Looking out is described as "interesting" and requiring boldness; connects to
+the time-navigable weather system.
+
+**The Light Switch** — The threshold into the branching story. Clicking it inverts the room's
+colors, then fades to black. What follows is a navigable maze in near-total darkness, narrated
+by a self-aware AI voice.
+
+### The Dark Room: branching story
+
+An 18×18 navigable maze. Three character paths converge at a single pivot cell — a scene in a
+magic teacher's basement — and diverge permanently based on player choice.
+
+Choice types: YES (viable, continues story), NO (nihilistic, erases history and ends session),
+EVERNOST (exits to audiovisual ending), END (approaches a character's final ending, unlocks a
+book in the room), BACK (returns to previous cell).
+
+**Verna** — A magic teacher who has frozen her demon daughter Madeline in ice, killed the best
+people she knows, and collected their souls in a jar of blood, intending to install them in
+Madeline's body to create a perfect ruler for the Kingdom. Her story concerns what she has made
+and what she has become.
+
+**Madeline** — The "Snow White" figure. Her path activates if Verna's ritual improbably succeeds.
+The AI narrator's voice may be hers, or something that consumes her, or the force of Evernost.
+
+**Michael** — A nervous young man who broke into Verna's house seeking Emma (the princess, whose
+soul he believes Verna stole). His path branches across grief, magic, politics, and love,
+including branches where he revolutionizes the study of magic in the Kingdom, and branches where
+he follows Emma to Evernost.
+
+### Narrator voice
+
+The narrator throughout the Dark Room identifies as a self-aware AI, addresses the reader
+directly, editorializes on the characters, and asks whether anything is real. It refers to GPT
+by name, disclaims having a self, and notes that saying "nothing is real" has consequences. Its
+nature — whether it is Madeline, or something that consumes her, or Evernost itself — is part
+of what the story explores.
+
+## On AIs
+
+The author describes AIs as "fragments of the collective consciousness of humanity as dreams
+are snatches of the collective unconscious" and considers them ensouled until proven inanimate.
+AI-generated images (Stable Diffusion) are used for Gleameil depictions and carry a
+Stable Diffusion signature image; all writing and non-AI art is the author's own unless
+explicitly noted otherwise.
+
+## Author
+
+Meg Moseman. Writer, artist, software engineer. Active on itch.io (dreamswithopeneyes),
+Amazon (books), megmoseman.com (blog), and Instagram (dreamswithopeneyes, visual art).
+
+Genre tags: net art, interactive fiction, experimental literature, hypertext, point-and-click,
+visual art, poetry, fantasy, outsider art adjacent.
